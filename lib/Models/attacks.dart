@@ -1,7 +1,7 @@
 class Attacks {
   int? id;
   String? message;
-  bool? state;
+  int? state;
   String? date;
   String? time;
   int? userId;
@@ -11,11 +11,17 @@ class Attacks {
 
   Attacks.fromJson(Map<String, dynamic> json) {
     id = json['id'];
+    print("================================");
     message = json['message'];
+    print("================================");
     state = json['state'];
+    print("================================");
     date = json['date'];
+    print("================================");
     time = json['time'];
+    print("================================");
     userId = json['user_id'];
+    print("================================");
   }
 
   Map<String, dynamic> toJson() {
