@@ -3,7 +3,7 @@ import 'package:home_smart/service/end_point/checkNewAttacks.dart';
 
 class Utilities {
 
-  static String baseURL= 'http://192.168.8.116' ;
+  static String baseURL= 'http://164.92.234.95' ;
   @pragma('vm:entry-point')
   static Future<void> triggerNot() async {
     await CheckAttacksService().checkAttacks().then((attacks) {
